@@ -32,19 +32,12 @@ public class Application {
         while (!command.equals("e")){
             System.out.println("(A)dd information - (S)earch information - (E)xit");
             command=  readLine();
-            switch (command.toLowerCase()){
-                case "a":
-
-                    addDocument();
-                    break;
-                case "s":
-                    searchDocument();
-                    break;
-                case "e":
-                    endApplication();
-                    break;
-                default:
-                    break;
+            if(command.toLowerCase() = "a"){
+                addDocument();
+            }else if(command.toLowerCase()="s"){
+                searchDocument();
+            }else if(command.toLowerCase()="e"){
+                endApplication(); 
             }
         }
     }
