@@ -32,11 +32,11 @@ public class Application {
         while (!command.equals("e")){
             System.out.println("(A)dd information - (S)earch information - (E)xit");
             command=  readLine();
-            if(command.toLowerCase() = "a"){
+            if(command.toLowerCase().equals("a")){
                 addDocument();
-            }else if(command.toLowerCase()="s"){
+            }else if(command.toLowerCase().equals("s")){
                 searchDocument();
-            }else if(command.toLowerCase()="e"){
+            }else if(command.toLowerCase().equals("e")){
                 endApplication(); 
             }
         }
